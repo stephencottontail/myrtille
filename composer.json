@@ -1,0 +1,8 @@
+{
+    "name": "sc/myrtille",
+    "type": "project",
+    "minimum-stability": "beta",
+    "require": {
+        "gpt/core": "^0.1.3@beta"
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "356f57e154cc2b6246fe8b69717d086a",
+    "packages": [
+        {
+            "name": "a7/autoload",
+            "version": "2.0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/a7/autoload.git",
+                "reference": "c1ff4ae98b389164b578793e2d87b2bf6b7f8b15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/a7/autoload/zipball/c1ff4ae98b389164b578793e2d87b2bf6b7f8b15",
+                "reference": "c1ff4ae98b389164b578793e2d87b2bf6b7f8b15",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "package.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "A7",
+                    "email": "a7@fastmail.com",
+                    "homepage": "https://github.com/a7"
+                }
+            ],
+            "description": "Automatically and recursively require_once all php files in a given directory.",
+            "time": "2018-02-05T20:00:27+00:00"
+        },
+        {
+            "name": "gpt/core",
+            "version": "0.1.3-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cjkoepke/genesisprotools-core.git",
+                "reference": "b1beca91bfaacc8c5a60ba5d902acbc1e01adffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cjkoepke/genesisprotools-core/zipball/b1beca91bfaacc8c5a60ba5d902acbc1e01adffb",
+                "reference": "b1beca91bfaacc8c5a60ba5d902acbc1e01adffb",
+                "shasum": ""
+            },
+            "require": {
+                "a7/autoload": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Koepke",
+                    "email": "hello@calvinkoepke.com"
+                }
+            ],
+            "description": "The core composer package for Genesis Pro Tools.",
+            "time": "2018-11-28T19:48:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "beta",
+    "stability-flags": {
+        "gpt/core": 10
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

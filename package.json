@@ -1,0 +1,21 @@
+{
+  "name": "myrtille",
+  "themename": "Myrtille",
+  "version": "1.0.0",
+  "description": "A custom theme for my new brutalism-focused site",
+  "template": "genesis",
+  "main": "index.js",
+  "repository": "https://github.com/stephencottontail/myrtille",
+  "author": "Stephen Dickinson <stephencottontail@me.com>",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-wp-toolkit": "^2.1",
+    "tailwindcss": "^0.7.3"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 10",
+    "IE 11"
+  ]
+}
