@@ -11,6 +11,7 @@
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-wp-toolkit": "^2.1",
+    "postcss-hexrgba": "^1.0.1",
     "tailwindcss": "^0.7.3"
   },
   "browserslist": [

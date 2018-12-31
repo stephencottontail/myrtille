@@ -4630,6 +4630,28 @@ table {
   z-index: auto;
 }
 
+a {
+  color: #151515;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -3px rgba(3,44,166, .35);
+          box-shadow: inset 0 -3px rgba(3,44,166, .35);
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+a:hover,
+a:focus {
+  -webkit-box-shadow: inset 0 -15px rgba(3,44,166, .35);
+          box-shadow: inset 0 -15px rgba(3,44,166, .35);
+}
+
+.content {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

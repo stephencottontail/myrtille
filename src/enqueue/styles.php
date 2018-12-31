@@ -17,6 +17,9 @@ add_action( 'wp_enqueue_scripts', 'myrtille_load_styles' );
  */
 function myrtille_load_styles() {
 
+	wp_enqueue_style( 'myrtille-style', get_stylesheet_uri() );
+
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Rubik', array(), CHILD_THEME_VERSION );
+
 
 }

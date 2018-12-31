@@ -51,6 +51,7 @@ module.exports = {
 	plugins: [
 		require('tailwindcss')('./tailwind.js'),
 		require('postcss-banner')({ banner: buildThemeHeader() }),
-		require('autoprefixer')
+		require('autoprefixer'),
+		require('postcss-hexrgba')
 	]
 };
