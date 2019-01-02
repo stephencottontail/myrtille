@@ -1925,16 +1925,12 @@ table {
   clear: both;
 }
 
-.font-sans {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Maiola, Palatino, serif;
 }
 
 .font-mono {
-  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-family: Courier New, monospace;
 }
 
 .font-hairline {
@@ -2126,11 +2122,11 @@ table {
 }
 
 .leading-normal {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .leading-loose {
-  line-height: 2;
+  line-height: 1.7;
 }
 
 .m-0 {
@@ -4630,6 +4626,14 @@ table {
   z-index: auto;
 }
 
+body {
+  background-color: #f2f2f2;
+  color: #151515;
+  font-size: 1rem;
+  font-family: Maiola, Palatino, serif;
+  line-height: 1.4;
+}
+
 a {
   color: #151515;
   text-decoration: none;
@@ -4637,6 +4641,14 @@ a {
           box-shadow: inset 0 -3px rgba(3,44,166, .35);
   -webkit-transition: all 350ms ease-in;
   transition: all 350ms ease-in;
+}
+
+code,
+pre,
+kbd,
+tt {
+  font-family: Courier New, monospace;
+  font-size: .875rem;
 }
 
 a:hover,
@@ -6032,16 +6044,12 @@ a:focus {
     clear: both;
   }
 
-  .sm\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-
   .sm\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Maiola, Palatino, serif;
   }
 
   .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: Courier New, monospace;
   }
 
   .sm\:font-hairline {
@@ -6233,11 +6241,11 @@ a:focus {
   }
 
   .sm\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .sm\:leading-loose {
-    line-height: 2;
+    line-height: 1.7;
   }
 
   .sm\:m-0 {
@@ -10102,16 +10110,12 @@ a:focus {
     clear: both;
   }
 
-  .md\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-
   .md\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Maiola, Palatino, serif;
   }
 
   .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: Courier New, monospace;
   }
 
   .md\:font-hairline {
@@ -10303,11 +10307,11 @@ a:focus {
   }
 
   .md\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .md\:leading-loose {
-    line-height: 2;
+    line-height: 1.7;
   }
 
   .md\:m-0 {
@@ -14172,16 +14176,12 @@ a:focus {
     clear: both;
   }
 
-  .lg\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-
   .lg\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Maiola, Palatino, serif;
   }
 
   .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: Courier New, monospace;
   }
 
   .lg\:font-hairline {
@@ -14373,11 +14373,11 @@ a:focus {
   }
 
   .lg\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .lg\:leading-loose {
-    line-height: 2;
+    line-height: 1.7;
   }
 
   .lg\:m-0 {
@@ -18242,16 +18242,12 @@ a:focus {
     clear: both;
   }
 
-  .xl\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-
   .xl\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Maiola, Palatino, serif;
   }
 
   .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: Courier New, monospace;
   }
 
   .xl\:font-hairline {
@@ -18443,11 +18439,11 @@ a:focus {
   }
 
   .xl\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .xl\:leading-loose {
-    line-height: 2;
+    line-height: 1.7;
   }
 
   .xl\:m-0 {

@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	@apply bg-milk text-black text-base font-serif leading-normal;
+}
+
 a {
 	@apply text-black no-underline;
 
 	box-shadow: inset 0 -3px rgba( config('colors.blueberry'), 0.35 );
 	transition: all 350ms ease-in;
+}
+
+code,
+pre,
+kbd,
+tt {
+	@apply font-mono text-sm;
 }
 
 a:hover,
