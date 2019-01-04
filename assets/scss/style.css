@@ -25,6 +25,38 @@ a:focus {
 	box-shadow: inset 0 -15px rgba( config('colors.blueberry'), 0.35 );
 }
 
+/** Forms **/
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	@apply inline-block bg-milk border-8 px-4 py-2;
+
+	border-top-color: config('colors.milk-light');
+	border-bottom-color: config('colors.milk-darkest');
+	border-left-color: config('colors.milk-lighter');
+	border-right-color: config('colors.milk-darker');
+}
+
+button:hover, button:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="reset"]:hover, input[type="reset"]:focus {
+	@apply bg-milk-dark;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+	@apply bg-milk-dark;
+
+	border-top-color: config('colors.milk-darkest');
+	border-bottom-color: config('colors.milk-light');
+	border-left-color: config('colors.milk-darker');
+	border-right-color: config('colors.milk-lighter');
+}
+
 /** Layout **/
 .wrap {
 	@apply my-0 mx-auto border-4;
@@ -65,6 +97,9 @@ a:focus {
 	@apply underline shadow-none;
 }
 
+/** Menu **/
+.menu-toggle {
+}
 .nav-primary .wrap {
 	@apply border-b-0;
 }

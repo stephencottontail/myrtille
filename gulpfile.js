@@ -47,9 +47,8 @@ toolkit.extendConfig({
 		}
 	},
 	js: {
-		'theme' : [
-			'assets/js/*.js'
-		],
+		'theme' : ['assets/js/*.js', '!assets/js/menu.js'],
+		'responsive-menu' : ['assets/js/menu.js']
 	},
 	dest: {
 		i18npo: 'dist/languages/',

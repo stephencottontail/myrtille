@@ -20,26 +20,16 @@ function myrtille_load_scripts() {
 	// Load scripts here.
 	$ext = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 
+	wp_deregister_script( 'superfish' );
+	wp_deregister_script( 'superfish-args' );
 	wp_enqueue_script( 'myrtille-theme-js', CHILD_JS_URL . "/theme${ext}.js", array('jquery'), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( 'myrtille-responsive-menu', CHILD_JS_URL . "/responsive-menu${ext}.js", array('jquery'), CHILD_THEME_VERSION, true );
 	wp_localize_script(
 		'myrtille-responsive-menu',
-		'genesis_responsive_menu',
+		'myrtille_responsive_menu',
 		array(
-			'mainMenu'         => __( 'Menu', 'myrtille' ),
-			'menuIconClass'    => 'dashicons-before dashicons-menu',
-			'subMenu'          => __( 'Menu', 'myrtille' ),
-			'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
-			'menuClasses'      => array(
-				'combine' => array(
-					'.nav-primary',
-					'.nav-header',
-					'.nav-secondary',
-				),
-				'others'  => array(
-					'.nav-footer',
-					'.nav-sidebar',
-				),
-			),
+			'open'  => 'Open Menu',
+			'close' => 'Close Menu'
 		)
 	);
 
