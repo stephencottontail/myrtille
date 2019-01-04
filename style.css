@@ -4747,11 +4747,68 @@ input[type="reset"]:active {
 
 /** Menu **/
 
-.menu-toggle {
+.nav-primary {
+  line-height: 1.25;
 }
 
 .nav-primary .wrap {
   border-bottom-width: 0;
+  padding: 1rem;
+}
+
+.nav-primary a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+}
+
+.nav-primary a:hover,
+.nav-primary a:focus {
+  text-decoration: underline;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-primary ul {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-primary.menu-active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-primary ul ul {
+  display: block;
+}
+
+.nav-primary li {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: .9em;
+}
+
+@media (min-width: 768px) {
+  .nav-primary li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-primary ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .nav-primary li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
 }
 
 .content {

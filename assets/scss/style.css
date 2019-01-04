@@ -98,10 +98,56 @@ input[type="reset"]:active {
 }
 
 /** Menu **/
-.menu-toggle {
+.nav-primary {
+	@apply leading-tight;
 }
+
 .nav-primary .wrap {
-	@apply border-b-0;
+	@apply border-b-0 p-4;
+}
+
+.nav-primary a {
+	@apply shadow-none;
+
+	color: inherit;
+}
+
+.nav-primary a:hover,
+.nav-primary a:focus {
+	@apply underline shadow-none;
+}
+
+.nav-primary ul {
+	@apply hidden flex-wrap;
+}
+
+.nav-primary.menu-active ul {
+	@apply flex;
+}
+
+.nav-primary ul ul {
+	@apply block;
+}
+
+.nav-primary li {
+	flex-basis: 100%;
+	font-size: 0.9em;
+}
+
+@screen md {
+	.nav-primary li {
+		flex-basis: 50%;
+	}
+}
+
+@screen lg {
+	.nav-primary ul {
+		@apply flex;
+	}
+
+	.nav-primary li {
+		flex-basis: 25%;
+	}
 }
 
 .content {

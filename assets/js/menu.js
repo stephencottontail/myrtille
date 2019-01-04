@@ -14,7 +14,7 @@
 	$( document ).ready( function() {
 		if ( menu[0] ) {
 			$( menu[0] ).before( $( '<button />', {
-				'class' : 'menu-toggle m-4',
+				'class' : 'menu-toggle mb-4 w-full lg:hidden',
 				'aria-expanded' : false,
 				'aria-pressed' : false,
 				'aria-haspopup' : true
