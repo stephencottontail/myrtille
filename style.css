@@ -4657,6 +4657,57 @@ a:focus {
           box-shadow: inset 0 -15px rgba(3,44,166, .35);
 }
 
+/** Layout **/
+
+.wrap {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 4px;
+  width: 90%;
+  background-color: rgba(242,242,242, .85);
+  border-top-color: #f6f6f6;
+  border-bottom-color: #919191;
+  border-left-color: #fafafa;
+  border-right-color: #dadada;
+}
+
+@media (min-width: 992px) {
+  .wrap {
+    max-width: 880px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 960px;
+  }
+}
+
+/** Header **/
+
+.site-header .wrap {
+  border-top-width: 0;
+}
+
+.site-header a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+}
+
+.site-header a:hover,
+.site-header a:focus {
+  text-decoration: underline;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-primary .wrap {
+  border-bottom-width: 0;
+}
+
 .content {
   overflow-wrap: break-word;
   -webkit-hyphens: auto;

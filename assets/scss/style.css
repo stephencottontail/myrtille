@@ -25,6 +25,50 @@ a:focus {
 	box-shadow: inset 0 -15px rgba( config('colors.blueberry'), 0.35 );
 }
 
+/** Layout **/
+.wrap {
+	@apply my-0 mx-auto border-4;
+
+	width: 90%;
+	background-color: rgba( config('colors.milk'), 0.85 );
+	border-top-color: config('colors.milk-light');
+	border-bottom-color: config('colors.milk-darker');
+	border-left-color: config('colors.milk-lighter');
+	border-right-color: config('colors.milk-dark');
+}
+
+@screen lg {
+	.wrap {
+		max-width: 880px;
+	}
+}
+
+@screen xl {
+	.wrap {
+		max-width: 960px;
+	}
+}
+
+/** Header **/
+.site-header .wrap {
+	@apply border-t-0;
+}
+
+.site-header a {
+	@apply shadow-none;
+
+	color: inherit;
+}
+
+.site-header a:hover,
+.site-header a:focus {
+	@apply underline shadow-none;
+}
+
+.nav-primary .wrap {
+	@apply border-b-0;
+}
+
 .content {
 	overflow-wrap: break-word;
 	hyphens: auto;
