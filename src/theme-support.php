@@ -28,3 +28,23 @@ add_theme_support( 'genesis-accessibility', array(
 	'drop-down-menu',
 	'headings',
 ) );
+
+add_theme_support( 'genesis-structural-wraps', array(
+	'footer',
+	'footer-widgets',
+	'header',
+	'menu-primary',
+	'menu-secondary',
+	'site-inner',
+	'site-tagline'
+) );
+
+add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-menus', array( 'primary' => 'Primary Navigation' ) );
+unregister_sidebar( 'sidebar' );
+unregister_sidebar( 'sidebar-alt' );
+genesis_unregister_layout( 'content-sidebar' );
+genesis_unregister_layout( 'sidebar-content' );
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );

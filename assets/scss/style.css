@@ -4,6 +4,10 @@
 
 body {
 	@apply bg-milk text-black text-base font-serif leading-normal;
+
+	background-image: url( 'dist/images/myrtille-bg.png' );
+	background-size: 100%;
+	background-repeat: repeat;
 }
 
 a {
@@ -59,10 +63,10 @@ input[type="reset"]:active {
 
 /** Layout **/
 .wrap {
-	@apply my-0 mx-auto border-4;
+	@apply my-0 mx-auto p-4 border-4;
 
 	width: 90%;
-	background-color: rgba( config('colors.milk'), 0.85 );
+	background-color: rgba( config('colors.milk'), 0.90 );
 	border-top-color: config('colors.milk-light');
 	border-bottom-color: config('colors.milk-darker');
 	border-left-color: config('colors.milk-lighter');
@@ -103,7 +107,7 @@ input[type="reset"]:active {
 }
 
 .nav-primary .wrap {
-	@apply border-b-0 p-4;
+	@apply border-b-0;
 }
 
 .nav-primary a {
