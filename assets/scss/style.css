@@ -17,16 +17,20 @@ a {
 	transition: all 350ms ease-in;
 }
 
+a:hover,
+a:focus {
+	box-shadow: inset 0 -15px rgba( config('colors.blueberry'), 0.35 );
+}
+
+p {
+	@apply mb-4;
+}
+
 code,
 pre,
 kbd,
 tt {
 	@apply font-mono text-sm;
-}
-
-a:hover,
-a:focus {
-	box-shadow: inset 0 -15px rgba( config('colors.blueberry'), 0.35 );
 }
 
 /** Forms **/
@@ -154,7 +158,17 @@ input[type="reset"]:active {
 	}
 }
 
+/** Content **/
 .content {
+	padding-top: 80px;
 	overflow-wrap: break-word;
 	hyphens: auto;
+}
+
+.single .content {
+	@apply p-0;
+}
+
+.entry-footer a {
+	color: inherit;
 }
