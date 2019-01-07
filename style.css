@@ -4664,6 +4664,82 @@ tt {
   font-size: .875rem;
 }
 
+kbd,
+tt {
+  background-color: #151515;
+  color: #f2f2f2;
+  padding: 2px;
+}
+
+ul,
+ol {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+dl {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+dt {
+  font-weight: 700;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+blockquote {
+  font-family: Courier New, monospace;
+  font-size: .875rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+table {
+  border-width: 1px;
+  border-color: #919191;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-width: 1px;
+  border-color: #919191;
+  padding: .25rem;
+}
+
+address {
+  font-style: italic;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+abbr[title],
+acronym {
+  border-bottom-width: 1px;
+  border-style: dashed;
+  border-color: #494949;
+}
+
+ins,
+var {
+  background-color: #dadada;
+  text-decoration: none;
+  padding: 2px;
+}
+
 /** Forms **/
 
 button,
@@ -4703,6 +4779,106 @@ input[type="reset"]:active {
   border-bottom-color: #f6f6f6;
   border-left-color: #919191;
   border-right-color: #fafafa;
+}
+
+/** Media **/
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignleft {
+  display: inline-block;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.aligncenter {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  display: inline-block;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wp-caption-text {
+  font-family: Courier New, monospace;
+  text-align: right;
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.gallery-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-columns-2 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 2);
+      flex-basis: calc(100% / 2);
+}
+
+.gallery-columns-3 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 3);
+      flex-basis: calc(100% / 3);
+}
+
+.gallery-columns-4 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 4);
+      flex-basis: calc(100% / 4);
+}
+
+.gallery-columns-5 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 5);
+      flex-basis: calc(100% / 5);
+}
+
+.gallery-columns-6 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 6);
+      flex-basis: calc(100% / 6);
+}
+
+.gallery-columns-7 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 7);
+      flex-basis: calc(100% / 7);
+}
+
+.gallery-columns-8 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 8);
+      flex-basis: calc(100% / 8);
+}
+
+.gallery-columns-9 .gallery-item {
+  -ms-flex-preferred-size: calc(100% / 9);
+      flex-basis: calc(100% / 9);
+}
+
+.gallery-caption {
+  text-align: center;
 }
 
 /** Layout **/
