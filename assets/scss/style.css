@@ -297,3 +297,48 @@ figure {
 .entry-footer a {
 	color: inherit;
 }
+
+/** Comments **/
+.comment-list {
+	@apply list-reset;
+}
+
+.comment-list .children {
+	@apply list-reset;
+}
+
+@screen lg {
+	.comment-list .children {
+		@apply pl-8;
+	}
+}
+
+.comment-footer a {
+	@apply inline-block bg-milk border-8 px-2 py-1 no-underline;
+
+	border-top-color: config('colors.milk-light');
+	border-bottom-color: config('colors.milk-darkest');
+	border-left-color: config('colors.milk-lighter');
+	border-right-color: config('colors.milk-darker');
+	box-shadow: none;
+}
+
+.comment-footer a:hover, .comment-footer a:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="reset"]:hover, input[type="reset"]:focus {
+	@apply bg-milk-dark;
+}
+
+.comment-footer a:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+	@apply bg-milk-dark;
+
+	border-top-color: config('colors.milk-darkest');
+	border-bottom-color: config('colors.milk-light');
+	border-left-color: config('colors.milk-darker');
+	border-right-color: config('colors.milk-lighter');
+	box-shadow: none;
+}
