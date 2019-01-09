@@ -4994,6 +4994,96 @@ figure {
   }
 }
 
+/** Navigation **/
+
+.archive-pagination ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .archive-pagination ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.archive-pagination li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  text-align: center;
+}
+
+.archive-pagination .pagination-previous,
+.archive-pagination .pagination-next {
+  margin-left: .25rem;
+  margin-right: .25rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 992px) {
+  .archive-pagination .pagination-previous,
+  .archive-pagination .pagination-next {
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+.archive-pagination .pagination-previous {
+  text-align: left;
+}
+
+.archive-pagination .pagination-next {
+  text-align: right;
+}
+
+.archive-pagination a {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-width: 4px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  text-decoration: none;
+  border-top-color: #f6f6f6;
+  border-bottom-color: #494949;
+  border-left-color: #fafafa;
+  border-right-color: #919191;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.archive-pagination a:hover,
+.archive-pagination a:focus {
+  background-color: #dadada;
+}
+
+.archive-pagination a:active {
+  background-color: #dadada;
+  border-top-color: #494949;
+  border-bottom-color: #f6f6f6;
+  border-left-color: #919191;
+  border-right-color: #fafafa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /** Content **/
 
 .content {
@@ -5012,7 +5102,7 @@ figure {
   color: inherit;
 }
 
-/** Comments */
+/** Comments **/
 
 .comment-list {
   list-style: none;

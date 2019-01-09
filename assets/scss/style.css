@@ -283,6 +283,67 @@ figure {
 	}
 }
 
+/** Navigation **/
+.archive-pagination ul {
+	@apply list-reset flex flex-wrap items-center;
+}
+
+@screen lg {
+	.archive-pagination ul {
+		@apply justify-between my-4;
+	}
+}
+
+.archive-pagination li {
+	@apply flex-1 text-center;
+}
+
+.archive-pagination .pagination-previous,
+.archive-pagination .pagination-next {
+	@apply mx-1;
+
+	flex-basis: 100%;
+}
+
+@screen lg {
+	.archive-pagination .pagination-previous,
+	.archive-pagination .pagination-next {
+		@apply m-0 flex-auto;
+	}
+}
+
+.archive-pagination .pagination-previous {
+	@apply text-left;
+}
+
+.archive-pagination .pagination-next {
+	@apply text-right;
+}
+
+.archive-pagination a {
+	@apply inline-block bg-milk border-4 px-2 py-1 no-underline;
+
+	border-top-color: config('colors.milk-light');
+	border-bottom-color: config('colors.milk-darkest');
+	border-left-color: config('colors.milk-lighter');
+	border-right-color: config('colors.milk-darker');
+	box-shadow: none;
+}
+
+.archive-pagination a:hover, .archive-pagination a:focus {
+	@apply bg-milk-dark;
+}
+
+.archive-pagination a:active {
+	@apply bg-milk-dark;
+
+	border-top-color: config('colors.milk-darkest');
+	border-bottom-color: config('colors.milk-light');
+	border-left-color: config('colors.milk-darker');
+	border-right-color: config('colors.milk-lighter');
+	box-shadow: none;
+}
+
 /** Content **/
 .content {
 	padding-top: 80px;
