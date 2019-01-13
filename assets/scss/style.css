@@ -344,6 +344,29 @@ figure {
 	box-shadow: none;
 }
 
+.prev-next-pagination {
+	@apply flex flex-wrap;
+}
+
+.prev-next-pagination .alignleft,
+.prev-next-pagination .alignright {
+	@apply float-none m-0;
+}
+
+.prev-next-pagination .pagination-previous,
+.prev-next-pagination .pagination-next {
+	@apply mx-1;
+
+	flex-basis: 100%;
+}
+
+@screen lg {
+	.prev-next-pagination .pagination-previous,
+	.prev-next-pagination .pagination-next {
+		@apply m-0 flex-auto;
+	}
+}
+
 /** Content **/
 .content {
 	padding-top: 80px;
