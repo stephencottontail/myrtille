@@ -324,13 +324,16 @@ figure {
 
 .comments-pagination a,
 .archive-pagination a {
-	@apply inline-block bg-milk border-4 px-2 py-1 no-underline;
+	@apply inline-block bg-milk no-underline;
 
 	border-top-color: config('colors.milk-light');
 	border-bottom-color: config('colors.milk-darkest');
 	border-left-color: config('colors.milk-lighter');
 	border-right-color: config('colors.milk-darker');
+	border-style: solid;
+	border-width: 3px;
 	box-shadow: none;
+	padding: 3px 6px;
 }
 
 .comments-pagination a:hover, .comments-pagination:focus,
@@ -340,6 +343,33 @@ figure {
 
 .comments-pagination a:active,
 .archive-pagination a:active {
+	@apply bg-milk-dark;
+
+	border-top-color: config('colors.milk-darkest');
+	border-bottom-color: config('colors.milk-light');
+	border-left-color: config('colors.milk-darker');
+	border-right-color: config('colors.milk-lighter');
+	box-shadow: none;
+}
+
+.prev-next-pagination a {
+	@apply inline-block bg-milk no-underline;
+
+	border-top-color: config('colors.milk-light');
+	border-bottom-color: config('colors.milk-darkest');
+	border-left-color: config('colors.milk-lighter');
+	border-right-color: config('colors.milk-darker');
+	border-style: solid;
+	border-width: 3px;
+	box-shadow: none;
+	padding: 6px 9px;
+}
+
+.prev-next-pagination a:hover, .archive-pagination a:focus {
+	@apply bg-milk-dark;
+}
+
+.prev-next-pagination a:active {
 	@apply bg-milk-dark;
 
 	border-top-color: config('colors.milk-darkest');

@@ -5058,18 +5058,16 @@ figure {
 .archive-pagination a {
   display: inline-block;
   background-color: #f2f2f2;
-  border-width: 4px;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
   text-decoration: none;
   border-top-color: #f6f6f6;
   border-bottom-color: #494949;
   border-left-color: #fafafa;
   border-right-color: #919191;
+  border-style: solid;
+  border-width: 3px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  padding: 3px 6px;
 }
 
 .comments-pagination a:hover,
@@ -5081,6 +5079,36 @@ figure {
 
 .comments-pagination a:active,
 .archive-pagination a:active {
+  background-color: #dadada;
+  border-top-color: #494949;
+  border-bottom-color: #f6f6f6;
+  border-left-color: #919191;
+  border-right-color: #fafafa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.prev-next-pagination a {
+  display: inline-block;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  border-top-color: #f6f6f6;
+  border-bottom-color: #494949;
+  border-left-color: #fafafa;
+  border-right-color: #919191;
+  border-style: solid;
+  border-width: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 6px 9px;
+}
+
+.prev-next-pagination a:hover,
+.archive-pagination a:focus {
+  background-color: #dadada;
+}
+
+.prev-next-pagination a:active {
   background-color: #dadada;
   border-top-color: #494949;
   border-bottom-color: #f6f6f6;
