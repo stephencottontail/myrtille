@@ -122,10 +122,8 @@ add_action( 'genesis_attr_entry-title-link', function( $attributes ) {
  */
 add_action( 'genesis_attr_archive-pagination', function( $attributes ) {
 	if ( ! 'numeric' === genesis_get_option( 'posts_nav' ) ) {
-		return;
+		$attributes['class'] = "$attributes[class] prev-next-pagination";
 	}
-
-	$attributes['class'] = "$attributes[class] prev-next-pagination";
 
 	return $attributes;
 } );
