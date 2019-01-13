@@ -312,14 +312,17 @@ figure {
 	}
 }
 
+.comments-pagination .pagination-previous,
 .archive-pagination .pagination-previous {
 	@apply text-left;
 }
 
+.comments-pagination .pagination-next,
 .archive-pagination .pagination-next {
 	@apply text-right;
 }
 
+.comments-pagination a,
 .archive-pagination a {
 	@apply inline-block bg-milk border-4 px-2 py-1 no-underline;
 
@@ -330,10 +333,12 @@ figure {
 	box-shadow: none;
 }
 
+.comments-pagination a:hover, .comments-pagination:focus,
 .archive-pagination a:hover, .archive-pagination a:focus {
 	@apply bg-milk-dark;
 }
 
+.comments-pagination a:active,
 .archive-pagination a:active {
 	@apply bg-milk-dark;
 
@@ -344,15 +349,20 @@ figure {
 	box-shadow: none;
 }
 
+.comments-pagination,
 .prev-next-pagination {
 	@apply flex flex-wrap;
 }
 
+.comments-pagination .alignleft,
+.comments-pagination .alignleft,
 .prev-next-pagination .alignleft,
 .prev-next-pagination .alignright {
 	@apply float-none m-0;
 }
 
+.comments-pagination .pagination-previous,
+.comments-pagination .pagination-next,
 .prev-next-pagination .pagination-previous,
 .prev-next-pagination .pagination-next {
 	@apply mx-1;
@@ -361,6 +371,8 @@ figure {
 }
 
 @screen lg {
+	.comments-pagination .pagination-previous,
+	.comments-pagination .pagination-next,
 	.prev-next-pagination .pagination-previous,
 	.prev-next-pagination .pagination-next {
 		@apply m-0 flex-auto;
