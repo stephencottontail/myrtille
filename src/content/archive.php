@@ -114,3 +114,16 @@ add_action( 'genesis_attr_entry-title-link', function( $attributes ) {
 
 	return $attributes;
 } );
+
+/**
+ * By default, Genesis doesn't provide different classes for the two
+ * different styles of archive pagination, which is inconvenient if
+ * different styles are needed
+ */
+add_action( 'genesis_attr_archive-pagination', function( $attributes ) {
+	if ( ! 'numeric' === genesis_get_option( 'posts_nav' ) ) {
+		$attributes['class'] = "$attributes[class] prev-next-pagination";
+	}
+
+	return $attributes;
+} );
