@@ -322,6 +322,7 @@ figure {
 	@apply text-right;
 }
 
+.entry-pagination a,
 .comments-pagination a,
 .archive-pagination a {
 	@apply inline-block bg-milk no-underline;
@@ -336,11 +337,13 @@ figure {
 	padding: 3px 6px;
 }
 
+.entry-pagination a:hover, .entry-pagination a:focus,
 .comments-pagination a:hover, .comments-pagination:focus,
 .archive-pagination a:hover, .archive-pagination a:focus {
 	@apply bg-milk-dark;
 }
 
+.entry-pagination a:active,
 .comments-pagination a:active,
 .archive-pagination a:active {
 	@apply bg-milk-dark;

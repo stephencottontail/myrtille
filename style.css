@@ -5054,6 +5054,7 @@ figure {
   text-align: right;
 }
 
+.entry-pagination a,
 .comments-pagination a,
 .archive-pagination a {
   display: inline-block;
@@ -5070,6 +5071,8 @@ figure {
   padding: 3px 6px;
 }
 
+.entry-pagination a:hover,
+.entry-pagination a:focus,
 .comments-pagination a:hover,
 .comments-pagination:focus,
 .archive-pagination a:hover,
@@ -5077,6 +5080,7 @@ figure {
   background-color: #dadada;
 }
 
+.entry-pagination a:active,
 .comments-pagination a:active,
 .archive-pagination a:active {
   background-color: #dadada;
